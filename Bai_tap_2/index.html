@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+
+body, html {
+    overflow-x: hidden;
+    font-weight: 300;
+    color: #fff;
+}
+
+  .row:first-child {
+    padding: 40px 30px;
+  }
+
+  .row {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .row span {
+    position: relative;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+}
+
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+  .basic-slide {
+    display: inline-block;
+    width: 215px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans",sans;
+    font-weight: 400;
+    color: #377d6a;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 70px;
+    transition: all .3s ease-in-out;
+  }
+
+  .basic-slide + label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 rgb(19 74 70 / 40%);
+    background: #7ab893;
+    transition: all .3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+</style>
+
+<body style="background-color: #042429;">
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col-6 left">
+        <h2>Khối lớp 1</h2>
+        <span>
+          <input class="basic-slide" id="inpToan" type="text" placeholder="Nhập điểm toán"><label
+            for="inpToan">Toán</label>
+        </span>
+        <br>
+        <span>
+          <input class="basic-slide" id="inpLy" type="text" placeholder="Nhập điểm lý"><label for="inpLy">Lý</label>
+        </span>
+        <br>
+        <span>
+          <input class="basic-slide" id="inpHoa" type="text" placeholder="Nhập điểm hóa"><label for="inpHoa">Hóa</label>
+        </span>
+        <br>
+        <button id="btnKhoi1" class="btn btn-success">Tính</button>
+        <br>
+        <p id="tbKhoi1" class="alert alert-success mt-3">2.00</p>
+      </div>
+      <div class="col-6 right">
+        <h2>Khối lớp 2</h2>
+        <span>
+          <input class="basic-slide" id="inpVan" type="text" placeholder="Nhập điểm văn"><label for="inpVan">Văn</label>
+        </span>
+        <br>
+        <span>
+          <input class="basic-slide" id="inpSu" type="text" placeholder="Nhập điểm sử"><label for="inpSu">Sử</label>
+        </span>
+        <br>
+        <span>
+          <input class="basic-slide" id="inpDia" type="text" placeholder="Nhập điểm địa"><label for="inpDia">Địa</label>
+        </span>
+        <span>
+          <input class="basic-slide" id="inpEnglish" type="text" placeholder="Nhập điểm English"><label
+            for="inpEnglish">English</label>
+        </span>
+        <br>
+        <button id="btnKhoi2" class="btn btn-success">Tính</button>
+
+        <p id="tbKhoi2" class="alert alert-success mt-3">2.50</p>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
